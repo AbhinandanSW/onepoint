@@ -1,0 +1,27 @@
+.accordion_container{
+display: flex;
+width: 100%;
+flex-direction: column;
+}
+
+.accordion_title_container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.accordion_title{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:20px;
+}
+
+.accordion_child_container{
+    display: none;
+
+}
+.accordion_expanded{
+    display: block;
+}
