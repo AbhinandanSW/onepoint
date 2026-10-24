@@ -1,0 +1,80 @@
+.viz-shell {
+  background-image:
+    radial-gradient(ellipse 70% 45% at 50% -10%, rgba(52, 211, 153, 0.07), transparent),
+    radial-gradient(ellipse 45% 40% at 100% 10%, rgba(34, 211, 238, 0.045), transparent);
+  background-repeat: no-repeat;
+}
+
+.viz-gutter {
+  scrollbar-width: none;
+}
+
+.viz-gutter::-webkit-scrollbar {
+  display: none;
+}
+
+.viz-code {
+  tab-size: 2;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+.viz-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.12) transparent;
+}
+
+.viz-code::-webkit-scrollbar,
+.viz-scroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.viz-code::-webkit-scrollbar-track,
+.viz-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.viz-code::-webkit-scrollbar-thumb,
+.viz-scroll::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.viz-code::-webkit-scrollbar-thumb:hover,
+.viz-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.viz-control {
+  display: inline-flex;
+  height: 2rem;
+  min-width: 2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+  color: #a1a1aa;
+  transition:
+    border-color 150ms ease,
+    background-color 150ms ease,
+    color 150ms ease;
+}
+
+.viz-control:hover:not(:disabled) {
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f4f4f5;
+}
+
+.viz-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.32;
+}
+
+.viz-range {
+  height: 16px;
+  cursor: pointer;
+  accent-color: #34d399;
+}
