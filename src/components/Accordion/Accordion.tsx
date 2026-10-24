@@ -1,4 +1,4 @@
-import "@/components/Accordion.css";
+import "@/components/Accordion/Accordion.css";
 import { type CSSProperties, type ReactNode, useId, useState } from "react";
 
 interface AccordionProps {
